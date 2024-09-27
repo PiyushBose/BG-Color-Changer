@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    padding: 10px;
+    margin: 10px;
+    background-color: #dadae6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    box-shadow: -5px 5px 20px gray;
+}
+
+button{
+    width: 10%;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+}
+
+#red{
+    background-color: red;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
