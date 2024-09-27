@@ -2,7 +2,16 @@ const body = document.querySelector("body");
 
 let colors = ["red", "green", "blue"];
 
+function createPopUp(){
+    document.querySelector(".pop-up").classList.remove("hide");
+    document.querySelector(".container").classList.add("blur");
+}
 
+function closePopUp(){
+    document.querySelector(".pop-up").classList.add("hide");
+    document.querySelector(".container").classList.remove("blur");
+
+}
 
 function updateColor(color){
     body.style.backgroundColor = color.getAttribute("id");
