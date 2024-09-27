@@ -14,21 +14,16 @@ body{
     box-shadow: -5px 5px 20px gray;
 }
 
+#root{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 button{
     width: 10%;
     padding: 3px;
     border: none;
     border-radius: 10px;
-}
-
-#red{
-    background-color: red;
-}
-
-#green{
-    background-color: green;
-}
-
-#blue{
-    background-color: blue;
+    font-size: 1.3rem;
 }
