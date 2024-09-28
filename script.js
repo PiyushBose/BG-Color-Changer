@@ -34,7 +34,7 @@ function closePopUp(){
 }
 
 function addColor(){
-    const inputColor = document.querySelector("input").value;
+    let inputColor = document.querySelector("input").value;
     if(CSS.supports('color', inputColor)){
         colors.push(inputColor);
         closePopUp();
@@ -45,6 +45,12 @@ function addColor(){
         invalid.innerHTML = 'Invalid Color! Try something else';
         invalid.classList.add("invalid");
         document.querySelector("input").after(invalid);
+        inputColor = '';
+        if(!inputColor){
+            setTimeout(()=>{
+                invalid.remove();
+            }, 1000);
+        }
     }
 }
 
